@@ -1,0 +1,98 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 1em;
+  grid-template-areas:
+    "output output output output"
+    "ac ac del divide"
+    "box1 box2 box3 multiply"
+    "box4 box5 box6 plus"
+    "box7 box8 box9 sub"
+    "dot box0 equals equals";
+}
+
+button {
+  cursor: pointer;
+}
+
+.boxes {
+  font-size: 20px;
+  text-align: center;
+}
+
+#output {
+  grid-area: output;
+  border: 1px solid cadetblue;
+  color: black;
+}
+
+#ac {
+  grid-area: ac;
+}
+
+#del {
+  grid-area: del;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#plus {
+  grid-area: plus;
+}
+
+#sub {
+  grid-area: sub;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+#dot {
+  grid-area: dot;
+}
+
+#box0 {
+  grid-area: box0;
+}
+
+#box1 {
+  grid-area: box1;
+}
+
+#box2 {
+  grid-area: box2;
+}
+
+#box3 {
+  grid-area: box3;
+}
+
+#box4 {
+  grid-area: box4;
+}
+
+#box5 {
+  grid-area: box5;
+}
+
+#box6 {
+  grid-area: box6;
+}
