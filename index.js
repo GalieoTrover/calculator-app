@@ -10,18 +10,6 @@ ac.addEventListener("click", () => (input.value = " "));
 let del = document.getElementById("del");
 del.addEventListener("click", () => input.value.slice(0, -1));
 
-// let divide = document.getElementById("divide");
-// divide.addEventListener("click", () => {
-//   let num1 = input.value;
-//   input.value = null;
-//   function divide() {
-//     let num2 = input.value;
-//     input.value = null;
-//     result = num1 / num2;
-//   }
-//   divide();
-// });
-
 let box0 = document.getElementById("box0");
 box0.addEventListener("click", () => (input.value += 0));
 
@@ -68,6 +56,54 @@ document.getElementById("plus").addEventListener("click", function () {
   }
   equals.onclick = function () {
     sum();
+    input.value = null;
+    input.value += result;
+    num1 = null;
+    result = null;
+  };
+});
+
+document.getElementById("multiply").addEventListener("click", function () {
+  let num1 = input.value;
+  input.value = null;
+  function multiply() {
+    let num2 = input.value;
+    result = parseInt(num1) * parseInt(num2);
+  }
+  equals.onclick = function () {
+    multiply();
+    input.value = null;
+    input.value += result;
+    num1 = null;
+    result = null;
+  };
+});
+
+document.getElementById("divide").addEventListener("click", function () {
+  let num1 = input.value;
+  input.value = null;
+  function divide() {
+    let num2 = input.value;
+    result = parseInt(num1) / parseInt(num2);
+  }
+  equals.onclick = function () {
+    divide();
+    input.value = null;
+    input.value += result;
+    num1 = null;
+    result = null;
+  };
+});
+
+document.getElementById("sub").addEventListener("click", function () {
+  let num1 = input.value;
+  input.value = null;
+  function substract() {
+    let num2 = input.value;
+    result = parseInt(num1) - parseInt(num2);
+  }
+  equals.onclick = function () {
+    substract();
     input.value = null;
     input.value += result;
     num1 = null;

@@ -22,6 +22,11 @@ h1 {
     "dot box0 equals equals";
 }
 
+input {
+  text-align: right;
+  font-size: 30px;
+}
+
 button {
   cursor: pointer;
 }
@@ -35,6 +40,7 @@ button {
   grid-area: output;
   border: 1px solid cadetblue;
   color: black;
+  /* font-size: 30px; */
 }
 
 #ac {
