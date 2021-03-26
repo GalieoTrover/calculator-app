@@ -5,6 +5,10 @@ body {
   font-size: 20px;
 }
 
+:root {
+  --primary-color: #ffb300;
+}
+
 h1,
 p {
   text-align: center;
@@ -46,23 +50,19 @@ button {
 }
 
 .boxes:hover {
-  border: 3px solid #ffb300;
-}
-
-.boxes:active {
-  border: 3px solid #ffb300;
+  border: 3px solid var(--primary-color);
 }
 
 #output {
   grid-area: output;
-  border: 1px solid cadetblue;
+  border: 1px solid black;
   color: black;
 }
 
 a {
   color: black;
   text-decoration: underline;
-  text-decoration-color: #ffb300;
+  text-decoration-color: var(--primary-color);
   text-decoration-thickness: 3px;
 }
 
