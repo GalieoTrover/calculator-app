@@ -7,9 +7,6 @@ let equals = document.getElementById("equals");
 let ac = document.getElementById("ac");
 ac.addEventListener("click", () => (input.value = " "));
 
-let del = document.getElementById("del");
-del.addEventListener("click", () => input.value.slice(0, -1));
-
 let box0 = document.getElementById("box0");
 box0.addEventListener("click", () => (input.value += 0));
 
